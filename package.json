@@ -10,10 +10,16 @@
     "private": false,
     "scripts": {
         "tsc": "tsc",
-        "tsc:watch": "tsc --watch"
+        "tsc:watch": "tsc --watch",
+        "tailwind": "tailwindcss build style/tailwind.css -o public/all.css",
+        "dev": "yarn run tailwind && yarn run tsc:watch",
+        "prod": "NODE_ENV=production yarn run tailwind && yarn run tsc"
     },
     "devDependencies": {
+        "autoprefixer": "^10.0.4",
         "eslint": "^7.15.0",
+        "postcss": "^8.1.14",
+        "tailwindcss": "^2.0.1",
         "typescript": "^4.1.2"
     }
 }

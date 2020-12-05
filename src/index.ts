@@ -29,16 +29,34 @@ const getFigures = (schuld: number): Figures => {
     }
 }
 
+const formatPrice = (amount: number): string => {
+    return Intl.NumberFormat('nl-NL', {
+        style: 'currency',
+        currency: 'EUR',
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 0,
+    }).format(amount);
+}
+const formatNumber = (amount: number): string => {
+    return Intl.NumberFormat('nl-NL', {
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 0,
+    }).format(amount);
+}
+
 window.addEventListener("load", () => {
     const counter = document.getElementById('counter');
+    const counter_fiets = document.getElementById('counter_fiets');
+    const counter_krat = document.getElementById('counter_krat');
+    const counter_bapao = document.getElementById('counter_bapao');
 
     function render() {
-        counter.innerText = Intl.NumberFormat('nl-NL', {
-            style: 'currency',
-            currency: 'EUR',
-            minimumFractionDigits: 0,
-            maximumFractionDigits: 0,
-        }).format(getSchuldToday());
+        const schuld = getSchuldToday();
+        const figures = getFigures(schuld)
+        counter.innerText = formatPrice(schuld);
+        counter_fiets.innerText = formatNumber(figures.fiets);
+        counter_krat.innerText = formatNumber(figures.krat);
+        counter_bapao.innerText = formatNumber(figures.bapao);
         window.requestAnimationFrame(render);
     }
 
