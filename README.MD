@@ -1,9 +1,26 @@
 # Schuldenteller.nl
+
 Source code of [schuldenteller.nl](https://schuldenteller.nl).
 
-# NOTICE
-This project is still a work in progress.
+> ⚠️ This project is still a work in progress.
 
+<center>
+    <img src="https://user-images.githubusercontent.com/16303480/101277469-f345a200-37b4-11eb-96dc-82b0b5de222d.png" alt="Screenshot" />
+</center>
+
+## Deploying
+
+Make sure you have at least an [LTS version of NodeJS](https://nodejs.org/) installed.
+
+```bash
+git clone git@github.com:NietMijnSchuld/schuldenteller.git
+cd schuldenteller
+yarn install
+yarn prod
+```
+
+You now have an optimised build of the website suitable for a production environment.
+You may serve the `/public` directory as a static site.
 
 ## Local development
 
@@ -12,21 +29,20 @@ After cloning:
 ```bash
 yarn install
 
-# Build tailwind locally
-yarn tailwind
-
-# Compile typescript
-yarn tsc --watch
+# Builds dev-build of the CSS, compiles TypeScript and watches .ts files.
+yarn dev
 ```
 
-## Build for production
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-```bash
-yarn install
+Please make sure to update tests as appropriate.
 
-# Build tailwind and run PurgeCSS
-NODE_ENV=production yarn tailwind
+### Contributors
 
-# Compile typescript
-yarn tsc
-```
+<a href="https://github.com/NietMijnSchuld/schuldenteller/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=NietMijnSchuld/schuldenteller" />
+</a>
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
