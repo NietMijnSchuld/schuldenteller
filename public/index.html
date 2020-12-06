@@ -5,66 +5,90 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <meta name="description" content="#NIETMIJNSCHULD">
+  <meta name="keywords" content="schulden teller studie schuld niet mijn nietmijnschuld #nietmijnschuld krat bier bapao swapfiets">
+  <meta property="og:locale" content="nl-NL">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Schuldenteller.nl">
+  <meta property="og:description" content="#NIETMIJNSCHULD">
+  <meta name="twitter:description" content="#NIETMIJNSCHULD">
+  <meta name="twitter:title" content="Schuldenteller.nl">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon-youngunited/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-youngunited/favicon-32x32.png"> 
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-youngunited/favicon-16x16.png"> 
+  <link rel="manifest" href="./img/favicon-youngunited/site.webmanifest"> 
+  <link rel="mask-icon" href="./img/favicon-youngunited/safari-pinned-tab.svg" color="#5bbad5"> 
+  <link rel="shortcut icon" href="./img/favicon-youngunited/favicon.ico"> 
+  <meta name="msapplication-TileColor" content="#da532c"> 
+  <meta name="msapplication-config" content="./img/favicon-youngunited/browserconfig.xml"> 
+  <meta name="theme-color" content="#ffffff">
+
   <title>SchuldenTeller.nl</title>
   <link rel="stylesheet" href="./all.css">
   <script src="./index.js"></script>
 </head>
 <body class="min-h-screen">
-  <header class="bg-red-600 flex flex-col justify-center items-center h-1/2">
-    <div class="w-full lg:w-1/2 md:w-2/3 flex flex-col text-white">
-      <h1 class="text-2xl font-bold m-8 text-center text-red-100">schuldenteller.nl</h1>
-      <div class="flex-1 py-8 px-8 md:py-32 md:px-0">
-        <!-- Main counter -->
-        <div>
-          <div class="flex flex-col items-start">
-            <h2 class="text-xl font-bold text-red-100">Studieschuld</h2>
-            <span id="counter" class="text-4xl sm:text-5xl lg:text-6xl 2xl:text-8xl font-black"></span>
+  <div class="min-h-screen pb-16">
+    <header class="bg-red-600 flex flex-col justify-center items-center h-1/2">
+      <div class="w-full lg:w-1/2 md:w-2/3 flex flex-col text-white">
+        <h1 class="text-2xl font-bold m-8 text-center text-red-100">schuldenteller.nl</h1>
+        <div class="flex-1 py-8 px-8 md:py-32 md:px-0">
+          <!-- Main counter -->
+          <div>
+            <div class="flex flex-col items-start">
+              <h2 class="text-xl font-bold text-red-100">Studieschuld</h2>
+              <span id="counter" class="text-4xl sm:text-5xl lg:text-6xl 2xl:text-8xl font-black"></span>
+            </div>
+          </div>
+          <!-- Alternative counters counter -->
+          <div class="flex flex-col md:flex-row gap-8 mt-8">
+
+            <!-- Bier -->
+            <div class="flex-1">
+              <div class="flex flex-col items-start">
+                <span class="text-md font-bold text-red-100">Kratten bier</span>
+                <span id="counter_krat" class="text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-black"></span>
+              </div>
+            </div>
+
+            <!-- Swapfietsen -->
+            <div class="flex-1">
+              <div class="flex flex-col items-start">
+                <span class="text-md font-bold text-red-100">Swapfietsen</span>
+                <span id="counter_fiets" class="text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-black"></span>
+              </div>
+            </div>
+
+            <!-- Broodjes Bapao -->
+            <div class="flex-1">
+              <div class="flex flex-col items-start">
+                <span class="text-md font-bold text-red-100">Bapao broodjes</span>
+                <span id="counter_bapao" class="text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-black"></span>
+              </div>
+            </div>
           </div>
         </div>
-        <!-- Alternative counters counter -->
-        <div class="flex flex-col md:flex-row gap-8 mt-8">
-
-          <!-- Bier -->
-          <div class="flex-1">
-            <div class="flex flex-col items-start">
-              <span class="text-md font-bold text-red-100">Kratten bier</span>
-              <span id="counter_krat" class="text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-black"></span>
-            </div>
-          </div>
-
-          <!-- Swapfietsen -->
-          <div class="flex-1">
-            <div class="flex flex-col items-start">
-              <span class="text-md font-bold text-red-100">Swapfietsen</span>
-              <span id="counter_fiets" class="text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-black"></span>
-            </div>
-          </div>
-
-          <!-- Broodjes Bapao -->
-          <div class="flex-1">
-            <div class="flex flex-col items-start">
-              <span class="text-md font-bold text-red-100">Bapao broodjes</span>
-              <span id="counter_bapao" class="text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-black"></span>
-            </div>
-          </div>
-        </div>
+        <div></div>
       </div>
-      <div></div>
-    </div>
-  </header>
-  <main class="w-full lg:w-1/2 md:w-2/3 mx-auto my-8 px-8">
-    <h2 class="text-2xl font-black text-black">#NietMijnSchuld</h2>
-    <p class="my-8 text-gray-700">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint animi consequuntur consectetur, culpa voluptatibus ducimus maxime ea quasi, quaerat, sed pariatur quam eius voluptates nostrum aperiam molestias earum voluptate at.
-    </p>
-
-    <div class="flex flex-col md:flex-row gap-8">
-      <!-- TODO: Add logo's -->
-      <div class="bg-gray-100 rounded h-16 w-32"></div>
-      <div class="bg-gray-100 rounded h-16 w-32"></div>
-      <div class="bg-gray-100 rounded h-16 w-32"></div>
-    </div>
-
-  </main>
+    </header>
+    <main class="w-full lg:w-1/2 md:w-2/3 mx-auto my-16 px-8">
+      <h2 class="text-2xl font-black text-black">Petitie #NietMijnSchuld: Schaf het leenstelsel af!</h2>
+      <p class="my-8 text-gray-700">
+        In een maatschappij waarin je zonder opleiding niet aan de bak komt, kan het niet zo zijn dat je als student met enorme schulden opgezadeld wordt nog vóór je goed en wel aan je werkende leven bent begonnen. Het leenstelsel is een schuldenmachine geworden. Daarom vragen wij het kabinet stappen te ondernemen om het leenstelsel af te schaﬀen.
+      </p>
+      <a href="https://www.nietmijnschuld.nl/petitie" target="_blank" class="bg-red-600 text-white font-bold px-4 py-3 rounded my-8">Teken de petitie</a>
+    </main>
+    <footer class="flex flex-col md:flex-row justify-center items-center gap-8 my-16">
+      <img src="./img/logo-fnv.png" alt="FNV" class="max-h-16 max-w-32 grayscale opacity-80" />
+      <img src="./img/logo-youngandunited-lsvb.png" alt="Young and United, LSVB" class="max-h-16 max-w-32 grayscale opacity-50" />
+    </footer>
+  </div>
+  <footer class="flex flex-col sm:flex-row sm:h-16 sm:-mt-16 justify-center items-center gap-4 bg-gray-50 text-gray-400">
+    <span>&copy; <script>document.write((new Date).getFullYear())</script> NietMijnSchuld</span>
+    &middot;
+    <span>Contribute on <a href="https://github.com/NietMijnSchuld/schuldenteller" target="_blank" class="underline">GitHub</a></span>
+  </footer>
 </body>
 </html>
