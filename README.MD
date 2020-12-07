@@ -5,8 +5,10 @@ Source code of [schuldenteller.nl](https://schuldenteller.nl).
 > ⚠️ This project is still a work in progress.
 
 <center>
-    <img src="https://user-images.githubusercontent.com/16303480/101277469-f345a200-37b4-11eb-96dc-82b0b5de222d.png" alt="Screenshot" />
+    <img src="https://user-images.githubusercontent.com/16303480/101393526-866efc80-38c7-11eb-95b5-6d1367bb6284.png" alt="Screenshot" />
 </center>
+
+
 
 ## Deploying
 
