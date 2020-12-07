@@ -30,6 +30,7 @@ After cloning:
 yarn install
 
 # Builds dev-build of the CSS, compiles TypeScript and watches .ts files.
+# Note: You need your own webserver to serve the /public directory.
 yarn dev
 ```
 
