@@ -16,9 +16,9 @@ const getSchuldToday = (): number => {
 }
 
 type Figures = {
-    fiets: number;
-    krat: number;
-    bapao: number;
+    fiets: number
+    krat: number
+    bapao: number
 }
 
 const getFigures = ( schuld: number ): Figures => {
