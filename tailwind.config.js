@@ -11,8 +11,8 @@ module.exports = {
             },
             fontFamily: {
                 'counter': ['"Roboto Mono"', 'mono'],
-                'garage': ['"Garage Gothic FB"', 'sans'],
-                'tw': ['"TW Cen MT Condensed"', 'sans']
+                'garage': ['"Garage Gothic FB"', 'sans-serif'],
+                'tw': ['"TW Cen MT Condensed"', '"Helvetica Neue"', 'Arial', 'sans-serif']
             }
         }
     },
