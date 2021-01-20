@@ -8,11 +8,6 @@
 }
 
 @font-face {
-    font-family: 'TW Cen MT Condensed';
-    src: local('TW Cen MT Condensed'), url(/fonts/tw-cen-mt-condensed.TTF) format('truetype');
-}
-
-@font-face {
     font-family: 'Roboto Mono';
     src: local('Roboto Mono'), url(/fonts/RobotoMono-Bold.ttf) format('truetype');
 }
