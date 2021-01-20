@@ -69,35 +69,35 @@ const formatNumber = (amount: number): string => {
 }
 
 window.addEventListener('load', () => {
-    const counter = document.getElementById('counter');
-    const counter_bapao = document.getElementById('counter_bapao');
-    const counter_swapfiets = document.getElementById('counter_swapfiets');
-    const counter_koffie = document.getElementById('counter_koffie');
-    const counter_studieBenodigdheden = document.getElementById('counter_studieBenodigdheden');
-    const counter_collegegeld = document.getElementById('counter_collegegeld');
-    const counter_huur = document.getElementById('counter_huur');
-    const counter_startersWoning = document.getElementById('counter_startersWoning');
-    const counter_netflix = document.getElementById('counter_netflix');
-    const counter_amaliaMaand = document.getElementById('counter_amaliaMaand');
-    const counter_docentMaand = document.getElementById('counter_docentMaand');
-    const counter_basisZorgVerzekering = document.getElementById('counter_basisZorgVerzekering');
+    const counter = document.getElementById('counter')
+    const counter_bapao = document.getElementById('counter_bapao')
+    const counter_swapfiets = document.getElementById('counter_swapfiets')
+    const counter_koffie = document.getElementById('counter_koffie')
+    const counter_studieBenodigdheden = document.getElementById('counter_studieBenodigdheden')
+    const counter_collegegeld = document.getElementById('counter_collegegeld')
+    const counter_huur = document.getElementById('counter_huur')
+    const counter_startersWoning = document.getElementById('counter_startersWoning')
+    const counter_netflix = document.getElementById('counter_netflix')
+    const counter_amaliaMaand = document.getElementById('counter_amaliaMaand')
+    const counter_docentMaand = document.getElementById('counter_docentMaand')
+    const counter_basisZorgVerzekering = document.getElementById('counter_basisZorgVerzekering')
 
     function render(): void {
-        const schuld = getSchuldToday();
-        counter.innerText = formatPrice(schuld);
+        const schuld = getSchuldToday()
+        counter.innerText = formatPrice(schuld)
 
-        const figures = getFigures(schuld);
-        counter_bapao.innerText = formatNumber(figures.bapao);
-        counter_swapfiets.innerText = formatNumber(figures.swapfiets);
-        counter_koffie.innerText = formatNumber(figures.koffie);
-        counter_studieBenodigdheden.innerText = formatNumber(figures.studieBenodigdheden);
-        counter_collegegeld.innerText = formatNumber(figures.collegegeld);
-        counter_huur.innerText = formatNumber(figures.huur);
-        counter_startersWoning.innerText = formatNumber(figures.startersWoning);
-        counter_netflix.innerText = formatNumber(figures.netflix);
-        counter_amaliaMaand.innerText = formatNumber(figures.amaliaMaand);
-        counter_docentMaand.innerText = formatNumber(figures.docentJaren);
-        counter_basisZorgVerzekering.innerText = formatNumber(figures.basisZorgVerzekering);
+        const figures = getFigures(schuld)
+        counter_bapao.innerText = formatNumber(figures.bapao)
+        counter_swapfiets.innerText = formatNumber(figures.swapfiets)
+        counter_koffie.innerText = formatNumber(figures.koffie)
+        counter_studieBenodigdheden.innerText = formatNumber(figures.studieBenodigdheden)
+        counter_collegegeld.innerText = formatNumber(figures.collegegeld)
+        counter_huur.innerText = formatNumber(figures.huur)
+        counter_startersWoning.innerText = formatNumber(figures.startersWoning)
+        counter_netflix.innerText = formatNumber(figures.netflix)
+        counter_amaliaMaand.innerText = formatNumber(figures.amaliaMaand)
+        counter_docentMaand.innerText = formatNumber(figures.docentJaren)
+        counter_basisZorgVerzekering.innerText = formatNumber(figures.basisZorgVerzekering)
         window.requestAnimationFrame(render)
     }
 
