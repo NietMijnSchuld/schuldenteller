@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="nl_NL">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <meta name="description" content="#NIETMIJNSCHULD">
+  <meta name="keywords"
+        content="schulden teller studie schuld niet mijn nietmijnschuld #nietmijnschuld krat bier bapao swapfiets">
+  <meta property="og:locale" content="nl-NL">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Schuldenteller.nl">
+  <meta property="og:description" content="#NIETMIJNSCHULD">
+  <meta name="twitter:description" content="#NIETMIJNSCHULD">
+  <meta name="twitter:title" content="Schuldenteller.nl">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon-youngunited/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-youngunited/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-youngunited/favicon-16x16.png">
+  <link rel="manifest" href="./img/favicon-youngunited/site.webmanifest">
+  <link rel="mask-icon" href="./img/favicon-youngunited/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="./img/favicon-youngunited/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="./img/favicon-youngunited/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <title>SchuldenTeller.nl</title>
+  <link rel="stylesheet" href="./all.css">
+  <!--  <script src="./index.js"></script>-->
+</head>
+<body class="min-h-screen">
+<div class="min-h-screen pb-16">
+  <header class="bg-red-600 flex flex-col justify-center items-center h-1/2">
+    <div class="w-full lg:w-1/2 md:w-2/3 flex flex-col text-white">
+      <div class="w-full px-8 md:px-0 py-4 flex flex-row flex-wrap-reverse">
+        <div>
+          <a class="inline-block pr-5 py-6 text-white hover:text-gray-300" href="/">Home</a>
+          <a class="inline-block px-5 py-6 text-white hover:text-gray-300" href="justification.html">Verantwoording</a>
+        </div>
+        <div class="py-6 w-full sm:w-auto sm:ml-auto">
+          <h1 class="font-bold text-center text-xl sm:text-right sm:text-base">schuldenteller.nl</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="w-full lg:w-1/2 md:w-2/3 mx-auto my-16 px-8">
+    <h2 class="text-2xl font-black text-black">Verantwoording van de getallen</h2>
+    Op deze pagina staat uitleg en verantwoording van de berekende getallen inclusief bronnen.
+
+    <h3 class="text-xl font-black text-black mt-8">Totale studieschuld</h3>
+    De totale huidige studieschuld is berekend aan de hand van de gepubliceerde getallen door het CBS van <span
+    class="whitespace-nowrap">2011-2019</span>.
+    Deze is vervolgens met exponentiele regressie doorgetrokken naar 2022, en vervolgens wordt er berekend wat de
+    huidige studieschuld is volgens deze regressie. Zie het excel bestand
+    <a href="downloads/Studieschulden 2011-2019.xlsx" class="link whitespace-nowrap" download>Studieschulden
+      2011-2019.xlsx</a>.
+
+    Deze totale studieschuld wordt vervolgens omgerekend naar een aantal items aan de hand van deze bronnen:
+    <div class="overflow-x-scroll mt-4 shadow-lg">
+      <table class="table-auto striped-table rounded">
+        <thead>
+        <tr class="bg-red-600 text-white">
+          <th class="text-left">Item</th>
+          <th class="text-right ">Prijs</th>
+          <th class="text-left ">Bron</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Broodjes bapao</td>
+          <td class="text-right">€0,89</td>
+          <td>
+            <a target="_blank" rel="noopener noreferrer" class="link"
+               href="https://www.ah.nl/producten/product/wi31392/ah-bapao-rundvlees">https://www.ah.nl/producten/product/wi31392/ah-bapao-rundvlees</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Swapfietsen</td>
+          <td class="text-right">€16,50</td>
+          <td>
+            <a target="_blank" rel="noopener noreferrer" class="link"
+               href="https://swapfiets.nl/offer/amsterdam">https://swapfiets.nl/offer/amsterdam</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Automaat koffie</td>
+          <td class="text-right">€0,40</td>
+          <td>
+            Automaat koffie van 40ct.
+          </td>
+        </tr>
+        <tr>
+          <td>Maanden studie materiaal</td>
+          <td class="text-right">€58,00</td>
+          <td>
+            <a target="_blank" rel="noopener noreferrer" class="link"
+               href="https://www.nibud.nl/consumenten/wat-kost-studeren/">https://www.nibud.nl/consumenten/wat-kost-studeren/</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Jaren collegegeld</td>
+          <td class="text-right">€2143,00</td>
+          <td>
+            <a target="_blank" rel="noopener noreferrer" class="link"
+               href="https://www.rijksoverheid.nl/onderwerpen/hoger-onderwijs/vraag-en-antwoord/hoogte-van-het-collegegeld-hogeschool-universiteit">https://www.rijksoverheid.nl/onderwerpen/hoger-onderwijs/vraag-en-antwoord/hoogte-van-het-collegegeld-hogeschool-universiteit</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Maanden huur</td>
+          <td class="text-right">€417,00</td>
+          <td>
+            <a target="_blank" rel="noopener noreferrer" class="link"
+               href="https://www.nibud.nl/consumenten/wat-kost-studeren/">https://www.nibud.nl/consumenten/wat-kost-studeren/</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Starterswoningen</td>
+          <td class="text-right">€282.046,00</td>
+          <td>
+            <a target="_blank" rel="noopener noreferrer" class="link"
+               href="https://www.rtlnieuws.nl/economie/life/artikel/4672856/starters-lenen-meer-gemiddeld-25-ton-hypotheek">https://www.rtlnieuws.nl/economie/life/artikel/4672856/starters-lenen-meer-gemiddeld-25-ton-hypotheek</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Maanden Netflix</td>
+          <td class="text-right">€7,99</td>
+          <td>
+            <a target="_blank" rel="noopener noreferrer" class="link" href="https://netflix.com">https://netflix.com</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Amalia salarissen</td>
+          <td class="text-right">€1.587.000,00</td>
+          <td>
+            <a target="_blank" rel="noopener noreferrer" class="link"
+               href="https://www.metronieuws.nl/in-het-nieuws/binnenland/2020/09/prinsjesdag-anno-2020">https://www.metronieuws.nl/in-het-nieuws/binnenland/2020/09/prinsjesdag-anno-2020</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Universitaire docent salarissen</td>
+          <td class="text-right">€4.097,00</td>
+          <td>
+            <a target="_blank" rel="noopener noreferrer" class="link"
+               href="https://www.nationaleberoepengids.nl/universitair-docent">https://www.nationaleberoepengids.nl/universitair-docent</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Maanden basis zorgverzekering</td>
+          <td class="text-right">€124,82</td>
+          <td>
+            <a target="_blank" rel="noopener noreferrer" class="link"
+               href="https://www.zorgwijzer.nl/zorgpremie">https://www.zorgwijzer.nl/zorgpremie</a>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+  <footer class="flex flex-col md:flex-row justify-center items-center gap-8 my-16">
+    <img src="./img/logo-fnv.png" alt="FNV" class="max-h-16 max-w-32 grayscale opacity-80"/>
+    <img src="./img/logo-youngandunited-lsvb.png" alt="Young and United, LSVB"
+         class="max-h-16 max-w-32 grayscale opacity-50"/>
+  </footer>
+</div>
+<footer class="flex flex-col sm:flex-row sm:h-16 sm:-mt-16 justify-center items-center gap-4 bg-gray-50 text-gray-400">
+  <span>&copy; <script>document.write((new Date).getFullYear())</script> NietMijnSchuld</span>
+  &middot;
+  <span>Contribute on <a href="https://github.com/NietMijnSchuld/schuldenteller" target="_blank" class="underline">GitHub</a></span>
+</footer>
+</body>
+</html>

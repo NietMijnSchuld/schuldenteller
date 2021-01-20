@@ -7,22 +7,23 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <meta name="description" content="#NIETMIJNSCHULD">
-  <meta name="keywords" content="schulden teller studie schuld niet mijn nietmijnschuld #nietmijnschuld krat bier bapao swapfiets">
+  <meta name="keywords"
+        content="schulden teller studie schuld niet mijn nietmijnschuld #nietmijnschuld krat bier bapao swapfiets">
   <meta property="og:locale" content="nl-NL">
   <meta property="og:type" content="article">
   <meta property="og:title" content="Schuldenteller.nl">
   <meta property="og:description" content="#NIETMIJNSCHULD">
   <meta name="twitter:description" content="#NIETMIJNSCHULD">
   <meta name="twitter:title" content="Schuldenteller.nl">
-  
+
   <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon-youngunited/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-youngunited/favicon-32x32.png"> 
-  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-youngunited/favicon-16x16.png"> 
-  <link rel="manifest" href="./img/favicon-youngunited/site.webmanifest"> 
-  <link rel="mask-icon" href="./img/favicon-youngunited/safari-pinned-tab.svg" color="#5bbad5"> 
-  <link rel="shortcut icon" href="./img/favicon-youngunited/favicon.ico"> 
-  <meta name="msapplication-TileColor" content="#da532c"> 
-  <meta name="msapplication-config" content="./img/favicon-youngunited/browserconfig.xml"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-youngunited/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-youngunited/favicon-16x16.png">
+  <link rel="manifest" href="./img/favicon-youngunited/site.webmanifest">
+  <link rel="mask-icon" href="./img/favicon-youngunited/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="./img/favicon-youngunited/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="./img/favicon-youngunited/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
 
   <title>SchuldenTeller.nl</title>
@@ -30,65 +31,149 @@
   <script src="./index.js"></script>
 </head>
 <body class="min-h-screen">
-  <div class="min-h-screen pb-16">
-    <header class="bg-red-600 flex flex-col justify-center items-center h-1/2">
-      <div class="w-full lg:w-1/2 md:w-2/3 flex flex-col text-white">
-        <h1 class="text-2xl font-bold m-8 text-center text-red-100">schuldenteller.nl</h1>
-        <div class="flex-1 py-8 px-8 md:py-32 md:px-0">
-          <!-- Main counter -->
+<div class="min-h-screen pb-16">
+  <header class="bg-red-600 items-center h-1/2">
+    <div class="w-full lg:w-1/2 md:w-2/3 text-white mx-auto">
+      <!-- Nav bar -->
+      <div class="w-full px-8 md:px-0 py-4 flex flex-row flex-wrap-reverse">
+        <div class="space-x-4 -ml-4">
+          <a class="inline-block px-4 py-6 text-white hover:text-red-100" href="/">Home</a>
+          <a class="inline-block px-4 py-6 text-white hover:text-red-100" href="justification.html">Verantwoording</a>
+        </div>
+        <div class="py-6 w-full sm:w-auto sm:ml-auto">
+          <h1 class="font-bold text-center text-xl sm:text-right sm:text-base">schuldenteller.nl</h1>
+        </div>
+      </div>
+
+      <div class="flex-1 sm:pt-16 md:pt-24 pb-16 md:pb-32 px-8 md:px-0">
+        <!-- Main counter -->
+        <div>
+          <h2 class="text-xl font-bold text-red-100">Studieschuld</h2>
+          <span id="counter" class="text-3xl sm:text-4xl md:text-5xl md2:text-6xl lg:text-6xl lg2:text-6xl font-counter font-black"></span>
+        </div>
+        <!-- Alternative counters counter -->
+        <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full gap-4">
+          <!-- TODO Grid padding etc. Grid cols based on screen size -->
           <div>
-            <div class="flex flex-col items-start">
-              <h2 class="text-xl font-bold text-red-100">Studieschuld</h2>
-              <span id="counter" class="text-4xl sm:text-5xl lg:text-6xl 2xl:text-8xl font-black"></span>
-            </div>
+            <h2 class="text-md font-bold text-red-100">Broodjes bapao</h2>
+            <div id="counter_bapao" class="text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-counter font-black"></div>
           </div>
-          <!-- Alternative counters counter -->
-          <div class="flex flex-col md:flex-row gap-8 mt-8">
-
-            <!-- Bier -->
-            <div class="flex-1">
-              <div class="flex flex-col items-start">
-                <span class="text-md font-bold text-red-100">Kratten bier</span>
-                <span id="counter_krat" class="text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-black"></span>
-              </div>
-            </div>
-
-            <!-- Swapfietsen -->
-            <div class="flex-1">
-              <div class="flex flex-col items-start">
-                <span class="text-md font-bold text-red-100">Swapfietsen</span>
-                <span id="counter_fiets" class="text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-black"></span>
-              </div>
-            </div>
-
-            <!-- Broodjes Bapao -->
-            <div class="flex-1">
-              <div class="flex flex-col items-start">
-                <span class="text-md font-bold text-red-100">Bapao broodjes</span>
-                <span id="counter_bapao" class="text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-black"></span>
-              </div>
-            </div>
+          <div>
+            <h2 class="text-md font-bold text-red-100">Swapfietsen</h2>
+            <div id="counter_swapfiets" class="text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-counter font-black"></div>
+          </div>
+          <div>
+            <h2 class="text-md font-bold text-red-100">Automaat koffie</h2>
+            <div id="counter_koffie" class="text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-counter font-black"></div>
+          </div>
+          <div>
+            <h2 class="text-md font-bold text-red-100">Maanden studie materiaal</h2>
+            <div id="counter_studieBenodigdheden"
+                  class="text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-counter font-black"></div>
+          </div>
+          <div>
+            <h2 class="text-md font-bold text-red-100">Jaren collegegeld</h2>
+            <div id="counter_collegegeld" class="text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-counter font-black"></div>
+          </div>
+          <div>
+            <h2 class="text-md font-bold text-red-100">Maanden huur</h2>
+            <div id="counter_huur" class="text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-counter font-black"></div>
+          </div>
+          <div>
+            <h2 class="text-md font-bold text-red-100">Starterswoningen</h2>
+            <div id="counter_startersWoning" class="text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-counter font-black"></div>
+          </div>
+          <div>
+            <h2 class="text-md font-bold text-red-100">Maanden Netflix</h2>
+            <div id="counter_netflix" class="text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-counter font-black"></div>
+          </div>
+          <div>
+            <h2 class="text-md font-bold text-red-100">Amalia salarissen</h2>
+            <div id="counter_amaliaMaand" class="text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-counter font-black"></div>
+          </div>
+          <div>
+            <h2 class="text-md font-bold text-red-100">Universitaire docent salarissen</h2>
+            <div id="counter_docentMaand" class="text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-counter font-black"></div>
+          </div>
+          <div>
+            <h2 class="text-md font-bold text-red-100">Maanden basis zorgverzekering</h2>
+            <div id="counter_basisZorgVerzekering"
+                  class="text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-counter font-black"></div>
           </div>
         </div>
-        <div></div>
       </div>
-    </header>
-    <main class="w-full lg:w-1/2 md:w-2/3 mx-auto my-16 px-8">
-      <h2 class="text-2xl font-black text-black">Petitie #NietMijnSchuld: Schaf het leenstelsel af!</h2>
-      <p class="my-8 text-gray-700">
-        In een maatschappij waarin je zonder opleiding niet aan de bak komt, kan het niet zo zijn dat je als student met enorme schulden opgezadeld wordt nog vóór je goed en wel aan je werkende leven bent begonnen. Het leenstelsel is een schuldenmachine geworden. Daarom vragen wij het kabinet stappen te ondernemen om het leenstelsel af te schaﬀen.
+
+      <p class="pb-8 px-8 md:px-0">
+        Benieuwd hoe deze getallen berekend worden? Bekijk dan de
+        <a href="justification.html" class="font-bold underline text-white hover:text-red-100">verantwoording</a>
+        pagina.
       </p>
-      <a href="https://www.nietmijnschuld.nl/petitie" target="_blank" class="bg-red-600 text-white font-bold px-4 py-3 rounded my-8">Teken de petitie</a>
-    </main>
-    <footer class="flex flex-col md:flex-row justify-center items-center gap-8 my-16">
-      <img src="./img/logo-fnv.png" alt="FNV" class="max-h-16 max-w-32 grayscale opacity-80" />
-      <img src="./img/logo-youngandunited-lsvb.png" alt="Young and United, LSVB" class="max-h-16 max-w-32 grayscale opacity-50" />
-    </footer>
-  </div>
-  <footer class="flex flex-col sm:flex-row sm:h-16 sm:-mt-16 justify-center items-center gap-4 bg-gray-50 text-gray-400">
-    <span>&copy; <script>document.write((new Date).getFullYear())</script> NietMijnSchuld</span>
-    &middot;
-    <span>Contribute on <a href="https://github.com/NietMijnSchuld/schuldenteller" target="_blank" class="underline">GitHub</a></span>
+    </div>
+  </header>
+  <main class="w-full lg:w-1/2 md:w-2/3 mx-auto my-16 px-8 md:px-0">
+    <h2 class="text-2xl font-black text-black">De meeste partijen zijn alweer tegen een leenstelsel, maar wat gaat er
+      gebeuren met onze studieschuld?</h2>
+    <p class="my-8 text-gray-700">
+      In een maatschappij waarin je zonder opleiding niet aan de bak komt, kan het niet zo zijn dat je als student met
+      enorme schulden opgezadeld wordt nog vóór je goed en wel aan je werkende leven bent begonnen. De meeste partijen
+      zijn alweer tegen een leenstelsel, maar nog niet iedereen is voor de mogelijkheid om schuldenvrij af te kunnen
+      studeren. Over compensatie voor de pechgeneratie wordt nog te weinig gesproken. Actie is nodig! Teken de petitie
+      en sluit je aan bij #NietMijnSchuld.
+    </p>
+    <a href="https://www.nietmijnschuld.nl/petitie" target="_blank"
+       class="bg-red-600 text-white font-bold px-4 py-3 rounded my-8">Teken de petitie</a>
+
+    <h2 class="text-2xl mt-16 font-black text-black">De getallen grafisch</h2>
+
+
+    <h2 class="text-2xl mt-16 font-black text-black">Feitjes</h2>
+    <ul class="my-8 text-gray-700 grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 spaced-grid -m-4">
+      <li>Het aantal studenten met een lening is verdrievoudigd sinds de invoering van het leenstelsel.</li>
+      <li>De gemiddelde studieschuld per student in het leenstelsel is €XXX,-.</li>
+      <li>
+        Een student in het leenstelsel leent gemiddeld €700,- per maand.
+        <small>
+          (<a href="https://www.cbs.nl/nl-nl/nieuws/2020/44/studenten-lenen-en-verdienen-steeds-meer" class="link"
+              target="_blank" rel="noopener noreferrer">cbs.nl</a>)
+        </small>
+      </li>
+      <li>
+        Met een gemiddelde studieschuld van €24.000,- tot €28.000,- kan de student ongeveer €30.000,- tot €35.000,-
+        minder hypotheek krijgen. Dit staat in principe vast totdat de schuld volledig is afbetaald.
+      </li>
+      <li>
+        Een uitwonende student geeft gemiddeld €1200,- per maand uit. De gemiddelde huurprijs is €434,-, maandelijkse
+        collegegeld kosten zijn circa €178,58 en de gemiddelde boodschappen kosten zijn €181,- per maand. Dan houdt de
+        gemiddelde student nog 400 euro over voor zorgkosten, vervoer, kleding, telefoon, ontspanning en sport &
+        cultuur.
+      </li>
+      <li>
+        Steeds minder studenten gaan uit huis. Het percentage is flink gestegen sinds de invoering van het leenstelsel.
+        <ul class="list-disc list-inside">
+          <li>Eerstejaars: 24% minder op kamers</li>
+          <li>Tweedejaars: 22% minder op kamers</li>
+          <li>Derdejaars: 18% minder op kamers</li>
+          <li>Masterstudenten: 9% minder op kamers</li>
+        </ul>
+        <small>
+          (<a href="https://www.kences.nl/publicaties/landelijke-monitor-studentenhuisvesting-2020/"
+              target="_blank"
+              class="link"
+              rel="noopener noreferrer">Kences Landelijke Monitor Studentenhuisvesting 2020 pagina 38/39</a>)
+        </small>
+      </li>
+    </ul>
+  </main>
+  <footer class="flex flex-col md:flex-row justify-center items-center gap-8 my-16">
+    <img src="./img/logo-fnv.png" alt="FNV" class="max-h-16 max-w-32 grayscale opacity-80"/>
+    <img src="./img/logo-youngandunited-lsvb.png" alt="Young and United, LSVB"
+         class="max-h-16 max-w-32 grayscale opacity-50"/>
   </footer>
+</div>
+<footer class="flex flex-col sm:flex-row sm:h-16 sm:-mt-16 justify-center items-center gap-4 bg-gray-50 text-gray-400">
+  <span>&copy; <script>document.write((new Date).getFullYear())</script> NietMijnSchuld</span>
+  &middot;
+  <span>Contribute on <a href="https://github.com/NietMijnSchuld/schuldenteller" target="_blank" class="link">GitHub</a></span>
+</footer>
 </body>
 </html>
