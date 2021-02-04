@@ -12,7 +12,8 @@ module.exports = {
             fontFamily: {
                 counter: ['"Roboto Mono"', 'mono'],
                 garage: ['"Garage Gothic FB"', 'sans-serif'],
-            }
+            },
+            padding: { 'fluid-video': '56.25%' }
         }
     },
     plugins: [],

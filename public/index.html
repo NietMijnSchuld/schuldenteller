@@ -129,8 +129,10 @@
         schuldenvrije basisbeurs in te voeren en compensatie voor de leenstelselgeneratie te garanderen! Wil jij dit
         ook? Teken dan de #NietMijnSchuld-petitie en spreek je uit!
       </p>
-      <a href="https://www.nietmijnschuld.nl/petitie" target="_blank"
-         class="bg-red-600 text-white font-bold px-4 py-3 rounded my-8">
+      <a href="https://www.nietmijnschuld.nl/petitie"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="inline-block bg-red-600 text-white font-bold px-4 py-3 rounded">
         Teken de petitie
       </a>
     </section>
@@ -166,29 +168,52 @@
       </h2>
       <p class="mt-8">Bekijk hier deze video waarin wij het probleem voor je uitleggen!</p>
 
-      <img class="mt-4" src="https://placehold.it/1280x720" alt="Placeholder"/>
+      <div class="relative h-0 pb-fluid-video mt-4">
+        <iframe src="https://www.youtube.com/embed/6ZprW8AhDJA"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                class="absolute top-0 left-0 w-full h-full"
+        ></iframe>
+      </div>
+
+      <a href="https://www.nietmijnschuld.nl/petitie"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="inline-block bg-red-600 text-white font-bold px-4 py-3 rounded mt-8">
+        Teken de petitie
+      </a>
 
       <p class="my-8 font-bold text-gray-600">
         Benieuwd waar deze feiten vandaan komen? Bekijk dan de
         <a href="justification.html" class="link">verantwoording</a> pagina.
       </p>
-      <a href="https://www.nietmijnschuld.nl/petitie" target="_blank"
-         class="bg-red-600 text-white font-bold px-4 py-3 rounded my-8">
-        Teken de petitie
-      </a>
+
+      <p class="my-8">
+        Wil je weten wat de standpunten zijn van politieke partijen over het leenstelsel? Check dan
+        <a href="https://studentikeus.iso.nl/" target="_blank" rel="noopener noreferrer" class="link">deze website</a>.
+      </p>
     </section>
 
   </main>
   <footer class="flex flex-col md:flex-row justify-center items-center gap-8 my-16">
-    <img src="./img/logo-fnv.png" alt="FNV" class="max-h-16 max-w-32 grayscale opacity-80"/>
-    <img src="./img/logo-youngandunited-lsvb.png" alt="Young and United, LSVB"
-         class="max-h-16 max-w-32 grayscale opacity-50"/>
+    <a href="https://www.youngandunited.nl/home#/" target="_blank" rel="noopener noreferrer">
+      <img src="./img/logo-fnv-yu.png" alt="" class="max-h-16 max-w-32 grayscale opacity-80"/>
+    </a>
+    <a href="https://lsvb.nl/" target="_blank" rel="noopener noreferrer">
+      <img src="./img/logo-lsvb.png" alt="" class="max-h-16 max-w-32 grayscale opacity-80"/>
+    </a>
+    <a href="https://groningerstudentenbond.nl/" target="_blank" rel="noopener noreferrer">
+      <img src="./img/logo-gsb.png" alt="" class="max-h-16 max-w-32 grayscale opacity-80"/>
+    </a>
   </footer>
 </div>
 <footer class="flex flex-col sm:flex-row sm:h-16 sm:-mt-16 justify-center items-center bg-gray-50 text-gray-400 px-4 py-4 leading-9">
   <span>&copy; <script>document.write((new Date).getFullYear())</script> NietMijnSchuld</span>
   <span class="px-4 hidden sm:block">&middot;</span>
-  <span>Contribute on <a href="https://github.com/NietMijnSchuld/schuldenteller" target="_blank" class="link">GitHub</a></span>
+  <span>Contribute on
+    <a href="https://github.com/NietMijnSchuld/schuldenteller" target="_blank" rel="noopener noreferrer" class="link">GitHub</a>
+  </span>
 </footer>
 </body>
 </html>
